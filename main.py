@@ -125,7 +125,7 @@ def resultToNum(result):
 # now we check for current results what is the next best word
 def bestNextGuess(results, guesses, guessList = guessOptions, wordList = wordOptions):
 	# hard code best first word
-	# if results == []: return "raise", 61
+	if results == []: return "raise", 61
 
 	bestWordSoFar = "";
 	minExpectedPossible = len(wordOptions);
